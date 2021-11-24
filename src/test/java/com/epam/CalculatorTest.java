@@ -14,74 +14,74 @@ public class CalculatorTest
     //////////////////////////////////////////////////////////////
     @Test
     public void testAddShouldAddWhenNumbersPositive()
-    {   int result = calculator.add(5,9);
-        assertEquals(14, result);
+    {   int calculationResult  = calculator.add(5,9);
+        assertEquals(14, calculationResult );
         
     }
 
     @Test
     public void testAddShouldAddWhenNumbersNegative()
-    {   int result = calculator.add(-5,-9);
-        assertEquals(-14, result);
+    {   int calculationResult  = calculator.add(-5,-9);
+        assertEquals(-14, calculationResult );
     }
 
     @Test
     public void testAddShouldAddWhenNumbersOfDifferentSigns()
-    {   int result = calculator.add(-5,9);
-        assertEquals(4, result);
+    {   int calculationResult  = calculator.add(-5,9);
+        assertEquals(4, calculationResult );
     }
     ///////////////////////////////////////////////////////////////////////////////////////
     @Test
     public void testSubtractShouldSubtractWhenNumbersNegative()
-    {   int result = calculator.subtract(-5,-9);
-        assertEquals(4, result); 
+    {   int calculationResult  = calculator.subtract(-5,-9);
+        assertEquals(4, calculationResult ); 
     }
 
     @Test
     public void testSubtractShouldSubtractWhenNumbersPositive()
-    {   int result = calculator.subtract(5,9);
-        assertEquals(-4, result);
+    {   int calculationResult = calculator.subtract(5,9);
+        assertEquals(-4, calculationResult );
     }
 
     @Test
     public void testSubtractShouldSubtractWhenNumbersOfDifferentSigns()
-    {   int result = calculator.subtract(-5,9);
-        assertEquals(-14, result);   
+    {   int calculationResult = calculator.subtract(-5,9);
+        assertEquals(-14, calculationResult );   
     }
     ////////////////////////////////////////////////
     @Test
-    public void testMultShouldMultipliсateWhenNumbersOfDifferentSigns()
-    {   int result = calculator.multiplicate(-5,9);
-        assertEquals(-45, result);
+    public void testMultipliсateShouldMultipliсateWhenNumbersOfDifferentSigns()
+    {   var calculationResult  = calculator.multiplicate(-5,9);
+        assertEquals(-45, calculationResult );
     }
 
     @Test
-    public void testMultShouldMultipliсateWhenNumbersPositive()
-    {   int result = calculator.multiplicate(5,9);
-        assertEquals(45, result);
+    public void testMultipliсateShouldMultipliсateWhenNumbersPositive()
+    {   int calculationResult  = calculator.multiplicate(5,9);
+        assertEquals(45, calculationResult );
     }
 
     @Test
-    public void testMultShouldMultipliсateWhenNumbersNegative()
-    {   int result = calculator.multiplicate(-5,-9);
-        assertEquals(45, result);
+    public void testMultipliсateShouldMultipliсateWhenNumbersNegative()
+    {   int calculationResult  = calculator.multiplicate(-5,-9);
+        assertEquals(45, calculationResult );
     }
 
     ///////////////////////////////////
     @Test
     public void testDivShouldDivideWhenNumbersNegative()
-    {   int result = calculator.divide(-45,-9);
-        assertEquals(5, result);
+    {   int calculationResult  = calculator.divide(-45,-9);
+        assertEquals(5, calculationResult );
     }
     @Test
     public void testDivShouldDivideWhenNumbersOfDifferentSigns()
-    {   int result = calculator.divide(-45,9);
-        assertEquals(-5, result);
+    {   int calculationResult  = calculator.divide(-45,9);
+        assertEquals(-5, calculationResult );
     }
     @Test
     public void testDivShouldDivideWhenNumbersPositive()
-    {   int result = calculator.divide(45,9);
-        assertEquals(5, result);  
+    {   int calculationResult  = calculator.divide(45,9);
+        assertEquals(5, calculationResult );  
     }
 
     @Test(expected=java.lang.ArithmeticException.class)
